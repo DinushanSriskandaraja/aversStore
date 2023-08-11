@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech2etc Ecommerce Tutorial</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a class="active" href="shop.html">shop</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact us</a></li>
+                <li id="lg-bag">
+                    <a href="cart.html"><i class="fa-brands fa-opencart"></i></i></a>
+                </li>
+                <a href="#" id="close"><i class="fa fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-brands fa-opencart"></i></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    <!-- pro details -->
+    <section id="prodetails" class="section-p1">
+        <div class="pro-img">
+            <img src="img/products/f1.jpg" width="100%" id="main-img" alt="">
+            <div class="sml-img-grp">
+                <div class="small-img-col">
+                    <img src="img/products/f1.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f2.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f3.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f4.jpg" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="single-pro-details">
+            <h6>Home/Tshirt</h6>
+            <h4>Men's Shirt</h4>
+            <h2>$75.00</h2>
+            <select>
+                <option>Select Size</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>Xl</option>
+            </select>
+            <input type="number" value="1">
+            <button class="normal">Add to cart</button>
+            <h4>Product Details</h4>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur perferendis repudiandae excepturi
+                voluptatibus! Natus numquam repudiandae aspernatur, porro sapiente explicabo rerum ducimus quis laborum,
+                consequuntur sequi deserunt adipisci nam aliquam!</span>
+        </div>
+    </section>
+    <!-- newsletter -->
+
+    <section id="newsletter" class="section-p1">
+        <div class="text">
+            <h4>Sign up for newsletter</h4>
+        </div>
+        <div class="form">
+            <input type="email" placeholder="Enter Your Email!">
+            <button class="normal">Signup</button>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>adress:</strong>someware on earth</p>
+            <p><strong>Phone:</strong>Phone Nuber</p>
+            <div class="follow">
+                <h4>Fllow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About Us</h4>
+            <a href="">about us</a>
+            <a href="">Delivery</a>
+            <a href="">privacy policy</a>
+            <a href="">terms & condition</a>
+            <a href="">Contact us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="">Sign-up</a>
+            <a href="">show cart</a>
+            <a href="">Wish list</a>
+
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From AppStore or Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg">
+                <img src="img/pay/play.jpg">
+            </div>
+            <p>Secured Payment Gateways </p>
+            <img src="img/pay/pay.png">
+        </div>
+        <div class="copyright">
+            <p>2021, Tech2 etc HTML CSS Ecommerce Templatek</p>
+        </div>
+    </footer>
+
+    <script>
+        // script for image change on click
+        var mainImg = document.getElementById("main-img");
+        var smlImg = document.getElementsByClassName("small-img");
+
+        smlImg[0].onclick = function() {
+            mainImg.src = smlImg[0].src;
+        }
+        smlImg[1].onclick = function() {
+            mainImg.src = smlImg[1].src;
+        }
+        smlImg[2].onclick = function() {
+            mainImg.src = smlImg[2].src;
+        }
+        smlImg[3].onclick = function() {
+            mainImg.src = smlImg[3].src;
+        }
+    </script>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
