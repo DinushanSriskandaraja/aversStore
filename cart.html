@@ -1,22 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>averS</title>
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" /> ****old***** -->
+    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 
 
-        <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 
-    </body>
+</head>
+
+<body>
+    <!-- header -->
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">shop</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="#">contact us</a></li>
+                <li id="lg-bag">
+                    <a href="cart.html" class="active"><i class="fa-brands fa-opencart"></i></i></a>
+                </li>
+                <a href="#" id="close"><i class="fa fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-brands fa-opencart"></i></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    <!-- landing -->
+    <section id="page-header" class="cart-header">
+
+        <h2>#Lets'Contact</h2>
+
+        <p>chat with us!</p>
+
+    </section>
+    <!-- cart -->
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href=""><i class="fa fa-close"></i></a></td>
+                    <td><img src="img/products/f1.jpg" alt=""></td>
+                    <td>Product Name</td>
+                    <td>$75</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$75</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <!-- cart-bill -->
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Aplly Coupun</h3>
+            <div><input type="text" placeholder="Enter Coupon">
+                <button class="normal">Apply</button></div>
+        </div>
+        <div id="subtotal">
+            <h3>cart total</h3>
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$355</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>free</td>
+                </tr>
+                <tr>
+                    <td><strong>total</strong></td>
+                    <td><strong>$355</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed</button>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>adress:</strong>someware on earth</p>
+            <p><strong>Phone:</strong>Phone Nuber</p>
+            <div class="follow">
+                <h4>Fllow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About Us</h4>
+            <a href="">about us</a>
+            <a href="">Delivery</a>
+            <a href="">privacy policy</a>
+            <a href="">terms & condition</a>
+            <a href="">Contact us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="">Sign-up</a>
+            <a href="">show cart</a>
+            <a href="">Wish list</a>
+
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From AppStore or Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg">
+                <img src="img/pay/play.jpg">
+            </div>
+            <p>Secured Payment Gateways </p>
+            <img src="img/pay/pay.png">
+        </div>
+        <div class="copyright">
+            <p>2021, Tech2 etc HTML CSS Ecommerce Templatek</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
 
 </html>
