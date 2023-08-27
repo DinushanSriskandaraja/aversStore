@@ -63,6 +63,11 @@
         outline: none;
         transition: .2s ease;
     }
+    
+    form input,
+    textarea {
+        border-radius: 50px;
+    }
     /* home page */
     /* Header */
     
@@ -210,7 +215,7 @@
         display: flex;
         flex-wrap: wrap;
         padding-top: 20px;
-        justify-content: center;
+        justify-content: space-evenly;
     }
     
     #product1 {
@@ -267,8 +272,8 @@
     }
     
     #product1 .pro #cart {
-        width: 40px;
-        height: 40px;
+        width: 41.5px;
+        height: 41.5px;
         line-height: 40px;
         border-radius: 50px;
         background-color: #e8f6ea;
@@ -781,6 +786,45 @@
         padding: 10px;
         font-size: 13px;
     }
+    /*###################
+     ####login page###
+    #################*/
+    
+    #login-details {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px;
+        padding: 80px;
+    }
+    
+    #login-details form {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #login-details form input {
+        width: 50%;
+        padding: 12px 15px;
+        outline: none;
+        margin-bottom: 20px;
+        border: 1px solid #e1e1e1;
+    }
+    
+    #login-details form button {
+        background-color: #088178;
+        color: #fff;
+    }
+    
+    #login-details form h2 {
+        font-size: 26px;
+        padding-bottom: 20px;
+    }
+    
+    #login-details form span {
+        font-size: 15px;
+    }
     
     @media (max-width:799px) {
         .section-p1 {
@@ -848,6 +892,17 @@
         }
         #form-details form {
             width: 50%;
+        }
+        /* login */
+        #login-details form input {
+            width: 100%;
+        }
+        #login-details form {
+            width: 45%;
+        }
+        #login-details {
+            padding: 20px;
+            justify-content: space-between;
         }
     }
     
@@ -938,5 +993,15 @@
         #subtotal {
             width: 100%;
             padding: 20px;
+        }
+        /* login */
+        #login-details {
+            flex-wrap: wrap;
+            margin: 10px;
+            padding: 30px 10px;
+        }
+        #login-details form {
+            width: 100%;
+            margin-bottom: 30px;
         }
     }
